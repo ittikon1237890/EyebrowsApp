@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCDBDD"
+    tools:context=".processScreen"
+    android:layout_gravity="center_horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/middle"
+        >
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/women5"
+            android:scaleType="centerCrop"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/B_A"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/before0"
+            android:background="@drawable/custom_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/download"
+            android:background="@drawable/custom_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/middle"
+        android:layout_marginBottom="10dp">
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isb_show_indicator="rounded_rectangle"
+            app:isb_seek_smoothly="false"
+            app:isb_progress="50"
+            app:isb_thumb_color="#538a9a"
+            app:isb_thumb_size="20dp"
+            app:isb_indicator_color="#86AED1"
+            app:isb_indicator_text_color="#FFFFFF"
+            app:isb_track_background_color="#8DA9C1"
+            app:isb_track_background_size="8dp"
+            app:isb_track_progress_color="#82b5c4"
+            app:isb_track_progress_size="10dp"
+            app:isb_only_thumb_draggable="false"
+            app:isb_track_rounded_corners="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#b3d2db">
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#95c8d8">
+            <ImageView
+                android:elevation="6dp"
+                android:id="@+id/btn1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/mode1"
+                android:background="@drawable/custom_btn"/>
+            <ImageView
+                android:elevation="6dp"
+                android:id="@+id/btn2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="1"
+                android:src="@drawable/mode2"
+                android:background="@drawable/custom_btn"/>
+            <ImageView
+                android:elevation="6dp"
+                android:id="@+id/btn3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="1"
+                android:src="@drawable/mode3"
+                android:background="@drawable/custom_btn"/>
+            <ImageView
+                android:elevation="6dp"
+                android:id="@+id/btn4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:text="1"
+                android:src="@drawable/mode4"
+                android:background="@drawable/custom_btn"/>
+            <ImageView
+                android:elevation="6dp"
+                android:id="@+id/btn5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="1"
+                android:src="@drawable/mode5"
+                android:background="@drawable/custom_btn"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

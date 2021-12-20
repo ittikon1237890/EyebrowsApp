@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveAndShare"
+    android:orientation="vertical"
+    android:background="#b3d2db">
+    <ImageView
+        android:elevation="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/img_save"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded_edges"
+        android:src="@drawable/women5"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:elevation="10dp"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@android:drawable/stat_sys_download"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:singleLine="true"
+            android:text="save"
+            android:textColor="#ffff"
+            android:background="@drawable/custom_button"/>
+
+        <Button
+            android:id="@+id/btn_share"
+            android:elevation="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_share"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:text="share"
+            android:background="@drawable/custom_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:elevation="10dp"
+        android:id="@+id/btn_before_after"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ripple_effect01">
+        <ImageView
+            android:id="@+id/Imgb_a"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Before/After"
+            android:textSize="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
